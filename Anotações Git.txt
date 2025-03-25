@@ -1,0 +1,11 @@
+-> git init = cria um repositorio novo no GitHub
+-> git status = para verificar os status do repostorio(quais arquivos foram incluidos, não incluidos e atualizados)
+-> git add  = add a alteração à area de preparação
+    ->git add . = add todos
+    -> git add "*nome do arquivo*" = add um(ou+) arquivo especifico
+-> git commit -m "*descrição" = valida a alteração do add, com uma descrição dessa versão
+    -> -m = menssagem
+-> git config --global user.email gabriel.enzo.libero.maran@gmail.com = define email global
+->  git config --global user.name Gabriel-Maran = define nome global
+-> git remote add origin "*link do Repositorio*" = define o link do repositorio que será enviado
+-> git push -u(--set-upstream) *remote-branch* = envia os dados para o repositorio, em sua branch selecionada

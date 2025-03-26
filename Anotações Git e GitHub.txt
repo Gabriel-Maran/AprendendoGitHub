@@ -5,9 +5,13 @@ git init
 
 git config --global user.email "seu@email.com"
 - Define email global para commits.
+Exemplo:
+git config --global user.email exemplo@gmail.com
 
 git config --global user.name "SeuNome"
 - Define nome global para commits.
+Exemplo:
+git config --global user.name JoaoSilva
 
 === VERIFICAÇÃO E ATUALIZAÇÃO ===
 
@@ -50,14 +54,16 @@ git checkout desenvolvimento
 2. git pull origin main
    - Atualiza a branch local com alterações remotas
 
-3. git merge branch1
-   - Mescla a branch "branch1" na branch atual
+3. git merge feature-branch
+   - Mescla a branch "feature-branch" na branch atual
 
-4. git add .
-    
-5. git commit -m "Merge da branch1"
+4. Resolver conflitos (se houver):
+   - Edite os arquivos marcados com <<<<<<<, =======, >>>>>>>
+   - Após resolver:
+     git add .
+     git commit -m "Merge da feature-branch"
 
-6. git push origin main
+5. git push origin main
    - Envia as alterações mescladas
 
 === PULL REQUEST (GITHUB) ===
@@ -88,7 +94,9 @@ git checkout desenvolvimento
 2. Edite o .gitignore:
    - Adicione pastas/arquivos para ignorar:
      Exemplo:
-     /senhas.txt (dentro do .gitignore)
+     node_modules/
+     senhas.txt
+     *.tmp
 
 === OUTROS COMANDOS ===
 
